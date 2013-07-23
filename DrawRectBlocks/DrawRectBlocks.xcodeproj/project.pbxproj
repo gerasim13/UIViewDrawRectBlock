@@ -20,6 +20,7 @@
 		DBA4214D179E1DA500551AAE /* TLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA4214C179E1DA500551AAE /* TLViewController.m */; };
 		DBA42155179E1DC400551AAE /* UIView+DrawRectBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA42154179E1DC400551AAE /* UIView+DrawRectBlock.m */; };
 		DBA42158179E1DF200551AAE /* UIButton+DrawRectBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA42157179E1DF200551AAE /* UIButton+DrawRectBlock.m */; };
+		DBA4215B179E222400551AAE /* UILabel+DrawRectBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA4215A179E222400551AAE /* UILabel+DrawRectBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,9 @@
 		DBA42154179E1DC400551AAE /* UIView+DrawRectBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DrawRectBlock.m"; sourceTree = "<group>"; };
 		DBA42156179E1DF200551AAE /* UIButton+DrawRectBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DrawRectBlock.h"; sourceTree = "<group>"; };
 		DBA42157179E1DF200551AAE /* UIButton+DrawRectBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DrawRectBlock.m"; sourceTree = "<group>"; };
+		DBA42159179E222400551AAE /* UILabel+DrawRectBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DrawRectBlock.h"; sourceTree = "<group>"; };
+		DBA4215A179E222400551AAE /* UILabel+DrawRectBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DrawRectBlock.m"; sourceTree = "<group>"; };
+		DBA4215C179E23A300551AAE /* TLDrawRectBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDrawRectBlocks.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				DBA42154179E1DC400551AAE /* UIView+DrawRectBlock.m */,
 				DBA42156179E1DF200551AAE /* UIButton+DrawRectBlock.h */,
 				DBA42157179E1DF200551AAE /* UIButton+DrawRectBlock.m */,
+				DBA42159179E222400551AAE /* UILabel+DrawRectBlock.h */,
+				DBA4215A179E222400551AAE /* UILabel+DrawRectBlock.m */,
 				DBA42136179E1DA500551AAE /* DrawRectBlocks */,
 				DBA4212F179E1DA500551AAE /* Frameworks */,
 				DBA4212E179E1DA500551AAE /* Products */,
@@ -98,6 +104,7 @@
 				DBA42148179E1DA500551AAE /* MainStoryboard.storyboard */,
 				DBA4214B179E1DA500551AAE /* TLViewController.h */,
 				DBA4214C179E1DA500551AAE /* TLViewController.m */,
+				DBA4215C179E23A300551AAE /* TLDrawRectBlocks.h */,
 				DBA42137179E1DA500551AAE /* Supporting Files */,
 			);
 			path = DrawRectBlocks;
@@ -189,6 +196,7 @@
 				DBA4214D179E1DA500551AAE /* TLViewController.m in Sources */,
 				DBA42155179E1DC400551AAE /* UIView+DrawRectBlock.m in Sources */,
 				DBA42158179E1DF200551AAE /* UIButton+DrawRectBlock.m in Sources */,
+				DBA4215B179E222400551AAE /* UILabel+DrawRectBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +319,7 @@
 				DBA42152179E1DA500551AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
