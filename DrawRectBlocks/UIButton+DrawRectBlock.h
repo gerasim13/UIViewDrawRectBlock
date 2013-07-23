@@ -11,10 +11,10 @@
 @interface UIButton (DrawRectBlock)
 typedef void(^UIButtonDrawRectBlock)(CGRect rect);
 
-// Creates and return a UIView (of frame CGRectZero) with a block that gets called on drawRect.
+// Creates and return a UIButton (of frame CGRectZero) with a block that gets called on drawRect.
 + (UIButton *)buttonWithDrawRectBlock:(UIButtonDrawRectBlock)block;
 
-// Creates and return a UIView with a block that gets called on drawRect.
+// Creates and return a UIButton with a block that gets called on drawRect.
 + (UIButton *)buttonWithFrame:(CGRect)frame drawRectBlock:(UIButtonDrawRectBlock)block;
 
 @end

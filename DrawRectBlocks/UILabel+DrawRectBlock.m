@@ -12,6 +12,7 @@
 @interface HSDrawRectBlockLabel : UILabel {
 @private
     __strong UILabelDrawRectBlock drawRectBlock_;
+    __strong UILabelDrawTextInRectBlock drawTextInRectBlock_;
 }
 
 - (void)setDrawRectBlock:(UILabelDrawRectBlock)drawRectBlock;
@@ -25,22 +26,38 @@
     drawRectBlock_ = [drawRectBlock copy];
 }
 
+- (void)setDrawTextInRectBlock:(UILabelDrawRectBlock)drawTextInRectBlock {
+    drawTextInRectBlock_ = [drawTextInRectBlock copy];
+}
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     if (drawRectBlock_)
         drawRectBlock_(rect);
 }
-
+-(void)drawTextInRect:(CGRect)rect {
+    if (drawTextInRectBlock_)
+        drawTextInRectBlock_(rect);
+}
 @end
 
 @implementation UILabel (DrawRectBlock)
-// Creates and return a UIView (of frame CGRectZero) with a block that gets called on drawRect.
+
 + (UILabel *)labelWithDrawRectBlock:(UILabelDrawRectBlock)block {
     return [self labelWithFrame:CGRectZero drawRectBlock:block];
 }
 
-// Creates and return a UIView with a block that gets called on drawRect.
+
 + (UILabel *)labelWithFrame:(CGRect)frame drawRectBlock:(UILabelDrawRectBlock)block {
+    HSDrawRectBlockLabel *label = [[HSDrawRectBlockLabel alloc]initWithFrame:frame];
+    [label setDrawRectBlock:block];
+    return label;
+}
+
++ (UILabel *)labelWithDrawTextInRectBlock:(UILabelDrawTextInRectBlock)block {
+    return [self labelWithFrame:CGRectZero drawRectBlock:block];
+}
+
++ (UILabel *)labelWithFrame:(CGRect)frame drawTextInRectBlock:(UILabelDrawRectBlock)block {
     HSDrawRectBlockLabel *label = [[HSDrawRectBlockLabel alloc]initWithFrame:frame];
     [label setDrawRectBlock:block];
     return label;

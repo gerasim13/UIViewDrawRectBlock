@@ -38,13 +38,11 @@
 
 @implementation UIButton (DrawRectBlock)
 
-
-// Creates and return a UIView (of frame CGRectZero) with a block that gets called on drawRect.
 + (UIButton *)buttonWithDrawRectBlock:(UIButtonDrawRectBlock)block {
     return [self buttonWithFrame:CGRectZero drawRectBlock:block];
 }
 
-// Creates and return a UIView with a block that gets called on drawRect.
+
 + (UIButton *)buttonWithFrame:(CGRect)frame drawRectBlock:(UIButtonDrawRectBlock)block {
     HSDrawRectBlockButton *button = [[HSDrawRectBlockButton alloc] initWithFrame:frame];
     [button setDrawRectBlock:block];

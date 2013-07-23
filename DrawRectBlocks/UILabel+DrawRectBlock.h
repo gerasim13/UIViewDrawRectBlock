@@ -10,10 +10,15 @@
 
 @interface UILabel (DrawRectBlock)
 typedef void(^UILabelDrawRectBlock)(CGRect rect);
+typedef void(^UILabelDrawTextInRectBlock)(CGRect rect);
 
-// Creates and return a UIView (of frame CGRectZero) with a block that gets called on drawRect.
+// Creates and return a UILabel (of frame CGRectZero) with a block that gets called on drawRect.
 + (UILabel *)labelWithDrawRectBlock:(UILabelDrawRectBlock)block;
 
-// Creates and return a UIView with a block that gets called on drawRect.
+// Creates and return a UILabel with a block that gets called on drawRect.
 + (UILabel *)labelWithFrame:(CGRect)frame drawRectBlock:(UILabelDrawRectBlock)block;
+
++ (UILabel *)labelWithDrawTextInRectBlock:(UILabelDrawTextInRectBlock)block;
+
++ (UILabel *)labelWithFrame:(CGRect)frame drawTextInRectBlock:(UILabelDrawRectBlock)block;
 @end
