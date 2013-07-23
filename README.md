@@ -1,9 +1,6 @@
-# UIView+DrawRectBlock
+# UIViewAndFriends+DrawRectBlock
 
-Tired of subclassing UIView just to implement drawRect?
-
-This is a category on UIView to create an instance with a block for its drawRect.
-
+This is an off-shoot of [UIView+DrawRectBlock](https://github.com/hsjunnesson/UIViewDrawRectBlock), which will bring in other fun classes such as UIButton, UILabel and whatever else might need some `drawRect:` love. Feel free to submit a PR or fork it and add whatever class catches your fancy.
 
 ## How do I use this?
 
@@ -47,7 +44,7 @@ If you're using iOS 5 and ARC, you can do something like this:
 
 ## License
 
-Copyright (C) 2012 Hans Sjunnesson
+Copyright (C) 2012 Terry Lewis II
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
