@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBA42131179E1DA500551AAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA42130179E1DA500551AAE /* UIKit.framework */; };
+		DBA42133179E1DA500551AAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA42132179E1DA500551AAE /* Foundation.framework */; };
+		DBA42135179E1DA500551AAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA42134179E1DA500551AAE /* CoreGraphics.framework */; };
+		DBA4213B179E1DA500551AAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBA42139179E1DA500551AAE /* InfoPlist.strings */; };
+		DBA4213D179E1DA500551AAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA4213C179E1DA500551AAE /* main.m */; };
+		DBA42141179E1DA500551AAE /* TLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA42140179E1DA500551AAE /* TLAppDelegate.m */; };
+		DBA42143179E1DA500551AAE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA42142179E1DA500551AAE /* Default.png */; };
+		DBA42145179E1DA500551AAE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA42144179E1DA500551AAE /* Default@2x.png */; };
+		DBA42147179E1DA500551AAE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBA42146179E1DA500551AAE /* Default-568h@2x.png */; };
+		DBA4214A179E1DA500551AAE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA42148179E1DA500551AAE /* MainStoryboard.storyboard */; };
+		DBA4214D179E1DA500551AAE /* TLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA4214C179E1DA500551AAE /* TLViewController.m */; };
+		DBA42155179E1DC400551AAE /* UIView+DrawRectBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA42154179E1DC400551AAE /* UIView+DrawRectBlock.m */; };
+		DBA42158179E1DF200551AAE /* UIButton+DrawRectBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA42157179E1DF200551AAE /* UIButton+DrawRectBlock.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DBA4212D179E1DA500551AAE /* DrawRectBlocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawRectBlocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA42130179E1DA500551AAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DBA42132179E1DA500551AAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DBA42134179E1DA500551AAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DBA42138179E1DA500551AAE /* DrawRectBlocks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawRectBlocks-Info.plist"; sourceTree = "<group>"; };
+		DBA4213A179E1DA500551AAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBA4213C179E1DA500551AAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBA4213E179E1DA500551AAE /* DrawRectBlocks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrawRectBlocks-Prefix.pch"; sourceTree = "<group>"; };
+		DBA4213F179E1DA500551AAE /* TLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAppDelegate.h; sourceTree = "<group>"; };
+		DBA42140179E1DA500551AAE /* TLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAppDelegate.m; sourceTree = "<group>"; };
+		DBA42142179E1DA500551AAE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DBA42144179E1DA500551AAE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DBA42146179E1DA500551AAE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DBA42149179E1DA500551AAE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DBA4214B179E1DA500551AAE /* TLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLViewController.h; sourceTree = "<group>"; };
+		DBA4214C179E1DA500551AAE /* TLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLViewController.m; sourceTree = "<group>"; };
+		DBA42153179E1DC400551AAE /* UIView+DrawRectBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DrawRectBlock.h"; sourceTree = "<group>"; };
+		DBA42154179E1DC400551AAE /* UIView+DrawRectBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DrawRectBlock.m"; sourceTree = "<group>"; };
+		DBA42156179E1DF200551AAE /* UIButton+DrawRectBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DrawRectBlock.h"; sourceTree = "<group>"; };
+		DBA42157179E1DF200551AAE /* UIButton+DrawRectBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DrawRectBlock.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBA4212A179E1DA500551AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA42131179E1DA500551AAE /* UIKit.framework in Frameworks */,
+				DBA42133179E1DA500551AAE /* Foundation.framework in Frameworks */,
+				DBA42135179E1DA500551AAE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBA42124179E1DA500551AAE = {
+			isa = PBXGroup;
+			children = (
+				DBA42153179E1DC400551AAE /* UIView+DrawRectBlock.h */,
+				DBA42154179E1DC400551AAE /* UIView+DrawRectBlock.m */,
+				DBA42156179E1DF200551AAE /* UIButton+DrawRectBlock.h */,
+				DBA42157179E1DF200551AAE /* UIButton+DrawRectBlock.m */,
+				DBA42136179E1DA500551AAE /* DrawRectBlocks */,
+				DBA4212F179E1DA500551AAE /* Frameworks */,
+				DBA4212E179E1DA500551AAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBA4212E179E1DA500551AAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBA4212D179E1DA500551AAE /* DrawRectBlocks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBA4212F179E1DA500551AAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBA42130179E1DA500551AAE /* UIKit.framework */,
+				DBA42132179E1DA500551AAE /* Foundation.framework */,
+				DBA42134179E1DA500551AAE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBA42136179E1DA500551AAE /* DrawRectBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				DBA4213F179E1DA500551AAE /* TLAppDelegate.h */,
+				DBA42140179E1DA500551AAE /* TLAppDelegate.m */,
+				DBA42148179E1DA500551AAE /* MainStoryboard.storyboard */,
+				DBA4214B179E1DA500551AAE /* TLViewController.h */,
+				DBA4214C179E1DA500551AAE /* TLViewController.m */,
+				DBA42137179E1DA500551AAE /* Supporting Files */,
+			);
+			path = DrawRectBlocks;
+			sourceTree = "<group>";
+		};
+		DBA42137179E1DA500551AAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBA42138179E1DA500551AAE /* DrawRectBlocks-Info.plist */,
+				DBA42139179E1DA500551AAE /* InfoPlist.strings */,
+				DBA4213C179E1DA500551AAE /* main.m */,
+				DBA4213E179E1DA500551AAE /* DrawRectBlocks-Prefix.pch */,
+				DBA42142179E1DA500551AAE /* Default.png */,
+				DBA42144179E1DA500551AAE /* Default@2x.png */,
+				DBA42146179E1DA500551AAE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBA4212C179E1DA500551AAE /* DrawRectBlocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA42150179E1DA500551AAE /* Build configuration list for PBXNativeTarget "DrawRectBlocks" */;
+			buildPhases = (
+				DBA42129179E1DA500551AAE /* Sources */,
+				DBA4212A179E1DA500551AAE /* Frameworks */,
+				DBA4212B179E1DA500551AAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawRectBlocks;
+			productName = DrawRectBlocks;
+			productReference = DBA4212D179E1DA500551AAE /* DrawRectBlocks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBA42125179E1DA500551AAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Terry Lewis";
+			};
+			buildConfigurationList = DBA42128179E1DA500551AAE /* Build configuration list for PBXProject "DrawRectBlocks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DBA42124179E1DA500551AAE;
+			productRefGroup = DBA4212E179E1DA500551AAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBA4212C179E1DA500551AAE /* DrawRectBlocks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBA4212B179E1DA500551AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA4213B179E1DA500551AAE /* InfoPlist.strings in Resources */,
+				DBA42143179E1DA500551AAE /* Default.png in Resources */,
+				DBA42145179E1DA500551AAE /* Default@2x.png in Resources */,
+				DBA42147179E1DA500551AAE /* Default-568h@2x.png in Resources */,
+				DBA4214A179E1DA500551AAE /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBA42129179E1DA500551AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA4213D179E1DA500551AAE /* main.m in Sources */,
+				DBA42141179E1DA500551AAE /* TLAppDelegate.m in Sources */,
+				DBA4214D179E1DA500551AAE /* TLViewController.m in Sources */,
+				DBA42155179E1DC400551AAE /* UIView+DrawRectBlock.m in Sources */,
+				DBA42158179E1DF200551AAE /* UIButton+DrawRectBlock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBA42139179E1DA500551AAE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA4213A179E1DA500551AAE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DBA42148179E1DA500551AAE /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA42149179E1DA500551AAE /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBA4214E179E1DA500551AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DBA4214F179E1DA500551AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBA42151179E1DA500551AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawRectBlocks/DrawRectBlocks-Prefix.pch";
+				INFOPLIST_FILE = "DrawRectBlocks/DrawRectBlocks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DBA42152179E1DA500551AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawRectBlocks/DrawRectBlocks-Prefix.pch";
+				INFOPLIST_FILE = "DrawRectBlocks/DrawRectBlocks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBA42128179E1DA500551AAE /* Build configuration list for PBXProject "DrawRectBlocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA4214E179E1DA500551AAE /* Debug */,
+				DBA4214F179E1DA500551AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBA42150179E1DA500551AAE /* Build configuration list for PBXNativeTarget "DrawRectBlocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBA42151179E1DA500551AAE /* Debug */,
+				DBA42152179E1DA500551AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBA42125179E1DA500551AAE /* Project object */;
+}
