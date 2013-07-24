@@ -46,7 +46,7 @@
 		DBA42157179E1DF200551AAE /* UIButton+DrawRectBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DrawRectBlock.m"; sourceTree = "<group>"; };
 		DBA42159179E222400551AAE /* UILabel+DrawRectBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DrawRectBlock.h"; sourceTree = "<group>"; };
 		DBA4215A179E222400551AAE /* UILabel+DrawRectBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DrawRectBlock.m"; sourceTree = "<group>"; };
-		DBA4215C179E23A300551AAE /* TLDrawRectBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDrawRectBlocks.h; sourceTree = "<group>"; };
+		DBA4215C179E23A300551AAE /* TLDrawRectBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLDrawRectBlocks.h; path = DrawRectBlocks/TLDrawRectBlocks.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +63,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DBA42124179E1DA500551AAE = {
+		DB3126E1179ED4700049DF18 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
 				DBA42153179E1DC400551AAE /* UIView+DrawRectBlock.h */,
 				DBA42154179E1DC400551AAE /* UIView+DrawRectBlock.m */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		DB3126E2179ED47F0049DF18 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
 				DBA42156179E1DF200551AAE /* UIButton+DrawRectBlock.h */,
 				DBA42157179E1DF200551AAE /* UIButton+DrawRectBlock.m */,
+			);
+			name = UIButton;
+			sourceTree = "<group>";
+		};
+		DB3126E3179ED48B0049DF18 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
 				DBA42159179E222400551AAE /* UILabel+DrawRectBlock.h */,
 				DBA4215A179E222400551AAE /* UILabel+DrawRectBlock.m */,
+			);
+			name = UILabel;
+			sourceTree = "<group>";
+		};
+		DBA42124179E1DA500551AAE = {
+			isa = PBXGroup;
+			children = (
+				DB3126E1179ED4700049DF18 /* UIView */,
+				DB3126E2179ED47F0049DF18 /* UIButton */,
+				DB3126E3179ED48B0049DF18 /* UILabel */,
+				DBA4215C179E23A300551AAE /* TLDrawRectBlocks.h */,
 				DBA42136179E1DA500551AAE /* DrawRectBlocks */,
 				DBA4212F179E1DA500551AAE /* Frameworks */,
 				DBA4212E179E1DA500551AAE /* Products */,
@@ -104,7 +129,6 @@
 				DBA42148179E1DA500551AAE /* MainStoryboard.storyboard */,
 				DBA4214B179E1DA500551AAE /* TLViewController.h */,
 				DBA4214C179E1DA500551AAE /* TLViewController.m */,
-				DBA4215C179E23A300551AAE /* TLDrawRectBlocks.h */,
 				DBA42137179E1DA500551AAE /* Supporting Files */,
 			);
 			path = DrawRectBlocks;
