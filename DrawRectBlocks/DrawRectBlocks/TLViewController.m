@@ -33,6 +33,21 @@
     }];
     [self.view addSubview:button];
     [button addTarget:self action:@selector(doStuff:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UITextField *field = ({
+        UITextField *f = [UITextField textFieldWithFrame:CGRectMake(10, 250, 200, 30) drawRectBlock:^(CGRect rect) {
+            UIBezierPath *path = [UIBezierPath bezierPath];
+            [[UIColor blackColor]setStroke];
+            [path moveToPoint:CGPointMake(CGRectGetMinX(rect), CGRectGetMaxY(rect))];
+            [path addLineToPoint:CGPointMake(CGRectGetMaxX(rect), CGRectGetMaxY(rect))];
+            [path stroke];
+
+        }];
+        f.borderStyle = UITextBorderStyleNone;
+        f.text = @"This is some text";
+        f;
+    });
+    [self.view addSubview:field];
 }
 
 - (void)didReceiveMemoryWarning

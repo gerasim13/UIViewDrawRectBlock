@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB7D2A2517A6124800456F6E /* UITextField+DrawRectBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7D2A2417A6124800456F6E /* UITextField+DrawRectBlock.m */; };
 		DBA42131179E1DA500551AAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA42130179E1DA500551AAE /* UIKit.framework */; };
 		DBA42133179E1DA500551AAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA42132179E1DA500551AAE /* Foundation.framework */; };
 		DBA42135179E1DA500551AAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA42134179E1DA500551AAE /* CoreGraphics.framework */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB7D2A2317A6124800456F6E /* UITextField+DrawRectBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DrawRectBlock.h"; sourceTree = "<group>"; };
+		DB7D2A2417A6124800456F6E /* UITextField+DrawRectBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DrawRectBlock.m"; sourceTree = "<group>"; };
 		DBA4212D179E1DA500551AAE /* DrawRectBlocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawRectBlocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA42130179E1DA500551AAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DBA42132179E1DA500551AAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -93,6 +96,8 @@
 		DBA42124179E1DA500551AAE = {
 			isa = PBXGroup;
 			children = (
+				DB7D2A2317A6124800456F6E /* UITextField+DrawRectBlock.h */,
+				DB7D2A2417A6124800456F6E /* UITextField+DrawRectBlock.m */,
 				DB3126E1179ED4700049DF18 /* UIView */,
 				DB3126E2179ED47F0049DF18 /* UIButton */,
 				DB3126E3179ED48B0049DF18 /* UILabel */,
@@ -221,6 +226,7 @@
 				DBA42155179E1DC400551AAE /* UIView+DrawRectBlock.m in Sources */,
 				DBA42158179E1DF200551AAE /* UIButton+DrawRectBlock.m in Sources */,
 				DBA4215B179E222400551AAE /* UILabel+DrawRectBlock.m in Sources */,
+				DB7D2A2517A6124800456F6E /* UITextField+DrawRectBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

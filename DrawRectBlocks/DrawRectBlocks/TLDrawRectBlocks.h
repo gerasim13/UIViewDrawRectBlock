@@ -9,3 +9,4 @@
 #import "UIView+DrawRectBlock.h"
 #import "UIButton+DrawRectBlock.h"
 #import "UILabel+DrawRectBlock.h"
+#import "UITextField+DrawRectBlock.h"
